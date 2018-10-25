@@ -1,0 +1,20 @@
+.headshot {
+  display: block;
+  height: 200px;
+  width: 200px;
+  margin-left: auto;
+  background-color: $primary;
+  overflow: hidden;
+  border-radius: 50%;
+  border: 2px solid $lt-gray;
+
+  @media screen and (max-width: $breakpoint-lg) {
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  img {
+    width: 100%;
+  }
+
+}
