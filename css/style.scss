@@ -8,7 +8,7 @@ Global Typography Font Smoothing — Do not remove
   -webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 }
-
+@import "_partials/_fontface.scss";
 
 /*=================================
 Global Styles - This is the table of contents for the global styles. It's broken out into separate .scss files for ease of modification and locating different functions and formating.
