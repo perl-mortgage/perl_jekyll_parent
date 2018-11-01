@@ -25,7 +25,7 @@ layout: default
             <p>{{ page.address }}</p>
 
             {% if page.phone_number %}
-              <p>{{ page.phone_number }}</p>
+              <p><a href="tel:{{ page.phone_number }}">{{ page.phone_number }}</a></p>
             {% endif %}
 
             {% if page.fax %}
@@ -36,7 +36,7 @@ layout: default
               <p>{{ page.cell }}</p>
             {% endif %}
 
-            {% if page.phone_number %}
+            {% if page.email %}
               <p><a href="mailto:{{ page.email }}">{{ page.email }}</a></p>
             {% endif %}
             <p class="small">{{ page.nmls }}</p>
@@ -62,7 +62,7 @@ layout: default
         ============================= -->
         <div class="row">
           <div class="col-12 text-center py-md">
-            <a href="{{ page.apply_link }}" class="btn btn-primary" target="_blank">Apply</a>
+            <a href="{{ page.apply_link }}" class="btn btn-primary" target="_blank">Apply Now</a>
             <a href="#free-rate-quote" class="btn btn-primary">Free Rate Quote</a>
             <a href="#contact" class="btn btn-primary">Contact</a>
           </div>

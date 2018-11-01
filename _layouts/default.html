@@ -1,47 +1,4 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-      <!-- =================================
-      Title - Defaults handled in config.yml. Will update on page-by-page basis through Front Matter and "if" statements.
-      ================================= -->
-        <title>{% if page.title %}{{ page.title}}{% else %}{{ site.title }}{% endif %} - PERL Mortgage</title>
-
-      <!-- =================================
-      Keywords - Defaults handled in config.yml. Will update on page-by-page basis through Front Matter and "if" statements.
-      ================================= -->
-        <meta name="description" content="{% if page.description %}{{ page.description | remove: '<p>' | remove: '</p>' }}{% else %}{{ site.description }}{% endif %}">
-
-      <!-- =================================
-      Keywords - Defaults already added. Will update on page-by-page basis through Front Matter and "if" statements.
-      ================================= -->
-        <meta name="keywords" content="{% if page.title %}{{ page.title }}, {% endif %}{% if page.address %}{{ page.address }}, {% endif %}{% if page.lo_title %}{{ page.lo_title }}, {% endif %}Mortgage Broker, PERL Mortgage, Dream home, Real Estate, Lender for Life, Chicago, Homebuyer, Home Buyer" />
-
-      <!-- =================================
-      Author - Handled in Config.yml
-      ================================= -->
-        <meta name="author" content="Ryan Underwood">
-
-      <!-- =================================
-      Google Fonts
-      ================================= -->
-        <link href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Oswald:200,300,400,500,600,700|Playfair+Display:400,400i,700,700i,900,900i|Roboto+Mono:100,100i,300,300i,400,400i,500,500i,700,700i" rel="stylesheet">
-
-      <!-- =================================
-      Custom CSS
-      ================================= -->
-        <link rel="stylesheet" href="/css/style.css">
-
-        <!-- =================================
-        Font Awesome
-        ================================= -->
-      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/brands.css" integrity="sha384-rf1bqOAj3+pw6NqYrtaE1/4Se2NBwkIfeYbsFdtiR6TQz0acWiwJbv1IM/Nt/ite" crossorigin="anonymous">
-      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/fontawesome.css" integrity="sha384-1rquJLNOM3ijoueaaeS5m+McXPJCGdr5HcA03/VHXxcp2kX2sUrQDmFc3jR5i/C7" crossorigin="anonymous">
-
-    </head>
-  <body class="{{ page.layout }}">
+{% incude doc-head.html %}
 <!-- =============================
 Navigation
 ============================= -->
@@ -68,26 +25,4 @@ Footer
 End Footer
 ============================= -->
 
-    <!-- Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <script src="../assets/js/jquery-2.1.1.js"></script>
-    <script src="../assets/js/main.js"></script>
-    <!-- ===============================================-->
-    <!--    JavaScripts-->
-    <!-- ===============================================-->
-    <script src="../assets/js/jquery.min.js"></script>
-    <script src="../assets/js/popper.min.js"></script>
-    <script src="../assets/js/bootstrap.js"></script>
-    <script src="../assets/js/plugins.js"></script>
-    <script src="../assets/lib/loaders.css/loaders.css.js"></script>
-    <script src="../assets/js/stickyfill.min.js"></script>
-    <script src="../assets/lib/remodal/remodal.js"></script>
-    <script src="../assets/js/rellax.min.js"></script>
-    <script src="../assets/lib/isotope-layout/isotope.pkgd.min.js"></script>
-    <script src="../assets/lib/isotope-packery/packery-mode.pkgd.min.js"></script>
-    <script src="../assets/js/theme.js"></script>
-
-  </body>
-</html>
+{% include doc-footer.html %}
