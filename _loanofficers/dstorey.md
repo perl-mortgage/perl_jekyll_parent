@@ -7,7 +7,7 @@ apply_link: https://dstorey.mortgage-application.net/WebApp/Start.aspx
 nmls: 'NMLS #: 668316; AZ: 0945143'
 title: Darren Storey
 lo_title: Branch Manager | Loan Officer
-branch_manager: 'true'
+branch_manager: 'false'
 phone_number: 1.602.412.7070
 email: dstorey@perlmortgage.com
 address: 16150 N. Arrowhead Fountains Center,<br> Suite 190,<br> Peoria, Arizona 85382
